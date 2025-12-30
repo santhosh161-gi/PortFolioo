@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
 
       <div className='relative z-10 flex flex-col  items-center mt-20 '>
-        <Image src="/santhosh.jpeg" alt="Hero" width={200} height={200} className='rounded-full h-[250px] w-[250px] ring-3  ring-gray-300' />
+        <Image src="/santhosh.png" alt="Hero" width={200} height={200} className='rounded-full h-[250px] w-[250px] ring-3  ring-gray-300' />
         <h1 className='mt-10  text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center tracking-wide  font-bold mt-4'>Crafting responsive,high-performance <br /><span className='text-cyan-500'> web experiences.</span></h1>
         {/* <h2 className=' mt-4 text-sm px-2 sm:text-xl font-semibold  flex items-center text-gray-500 mt-2 text-center'>
             I design and develop fast, user-friendly web applications with modern technologies.
