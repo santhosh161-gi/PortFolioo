@@ -15,6 +15,7 @@ const Project = () => {
         <ProjectCard img="/spider.png" title="Movie app" description="A modern responsive movie app designed using Figma and built with HTML, CSS & JavaScript." />
         <ProjectCard img="/nike.png" title="Nike clone app" description="A modern responsive Nike clone app designed using Figma and built with HTML, CSS & JavaScript." />
         <ProjectCard img="/ecomm.jpg" title="E-Commerce Website" description="A modern responsive E-Commerce Website designed using Figma and built with React.js, mySQL & Springboot." />
+        <ProjectCard img="/netflix.png" title="Netflix Clone Website" description="A modern responsive Netflix Clone Website designed using Figma and built with Next.js, typescript, TMDB API & Tailwind CSS." />
       </div>
     </div>
   )

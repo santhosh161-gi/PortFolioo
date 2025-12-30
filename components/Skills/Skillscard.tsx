@@ -1,6 +1,6 @@
 import React from 'react'
-import { SiCss3, SiDocker, SiFigma, SiFlutter, SiGit, SiGithub, SiHtml5, SiJavascript, SiLinux, SiMongodb, SiMysql, SiReact, SiSpringboot, SiTailwindcss } from 'react-icons/si'
-import { TbBrandNextjs } from "react-icons/tb";
+import { SiCss3, SiDocker, SiFigma, SiFlutter, SiGit, SiGithub, SiHtml5, SiJavascript, SiJquery, SiLaravel, SiLinux, SiMongodb, SiMysql, SiReact, SiSpringboot, SiTailwindcss } from 'react-icons/si'
+import { TbBrandNextjs, TbBrandVercel } from "react-icons/tb";
 import { DiNodejs } from "react-icons/di";
 import { LiaJava } from "react-icons/lia";
 const Skillscard = () => {
@@ -26,8 +26,8 @@ const Skillscard = () => {
         },
         {
             id:4,
-            name:"React",
-            img:<SiReact size={50}/>,
+            name:"jQuery",
+            img:<SiJquery size={50}/>,      
             
         },
         {
@@ -95,7 +95,7 @@ const Skillscard = () => {
         },
         {
             id:16,
-            name:"react native",
+            name:"React Native",
             img:<SiReact size={50}/>,
             
         },
@@ -110,6 +110,12 @@ const Skillscard = () => {
             name:"Docker",
             img:<SiDocker size={50}/>,
             
+        },
+        {
+            id:19,
+            name:"vercel",
+            img:<TbBrandVercel size={50}/>,
+
         }
     
     ]
