@@ -7,7 +7,7 @@ const Skills = () => {
       <div className='w-[90%] sm:w-[80%] mx-auto'>
         <div>
           <h1 className='text-2xl text-center font-bold sm:text-3xl md:text-4xl text-white'>
-            My <span className='text-cyan-500'>Skills</span>
+            My <span className='text-cyan-500 uppercase'>SKILLS</span>
           </h1>
         </div>
         <div className='mt-10'>

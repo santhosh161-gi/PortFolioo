@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} font-[var(--font-poppins)] antialiased bg-[#0d0d1f] text-white`}
+        className={`${poppins.variable} font-[var(--font-poppins)] antialiased md:bg-[#0d0d1f] sm:bg-[#0d0d1f] lg:bg-[#0d0d1f] xl:bg-[#0d0d1f] 2xl:bg-[#0d0d1f] text-white`}
       >
         <ResponsiveNav />
         {children}
