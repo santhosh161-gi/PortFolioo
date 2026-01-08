@@ -10,17 +10,18 @@ const Resume = () => {
 
         {/* LEFT SIDE – INTERNSHIPS */}
         <div>
-          <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl text-white">
+          <h1 className="text-xl font-bold sm:text-2xl md:text-3xl text-slate-300 uppercase">
             Internships
           </h1>
           <div className="mt-10">
             <ResumeCard />
           </div>
+          
         </div>
 
         {/* RIGHT SIDE – EDUCATION */}
         <div>
-          <h1 className="text-2xl font-bold sm:text-3xl md:text-4xl text-white">
+          <h1 className="text-xl font-bold sm:text-2xl md:text-3xl text-slate-300 uppercase">
             Education
           </h1>
           <div className="mt-10 flex flex-col gap-10 items-center">

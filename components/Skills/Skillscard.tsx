@@ -3,7 +3,30 @@ import { SiCss3, SiDocker, SiFigma, SiFlutter, SiGit, SiGithub, SiHtml5, SiJavas
 import { TbBrandNextjs, TbBrandVercel } from "react-icons/tb";
 import { DiNodejs } from "react-icons/di";
 import { LiaJava } from "react-icons/lia";
+import { GiJigsawBox } from "react-icons/gi";
+import { useEffect } from 'react';
+import gsap from 'gsap';
 const Skillscard = () => {
+
+    useEffect(()=>{
+         gsap.fromTo('#skills', {
+            y:20,
+            opacity:0,
+            duration:1,
+            ease:'power3.out',
+            repeat:-1,
+            yoyo:true,
+        },
+        {
+            y:0,
+            opacity:1,
+            duration:1,
+            ease:'power3.out',
+            repeat:-1,
+            yoyo:true,
+        }
+    );
+    },[])
 
     const skills=[
         {
@@ -116,11 +139,17 @@ const Skillscard = () => {
             name:"vercel",
             img:<TbBrandVercel size={50}/>,
 
+        },
+        {
+            id:20,
+            name:"GSAP",
+            img:<GiJigsawBox size={50}/>,
+            
         }
     
     ]
   return (
-    <div className='flex flex-wrap items-center justify-center gap-5'>
+    <div className='flex flex-wrap items-center justify-center gap-5' id='skills'>
         {
             skills.map((skill)=>(
                 <div key={skill.id} className='flex flex-col items-center justify-center hover:scale-110 transition-all duration-300 '>

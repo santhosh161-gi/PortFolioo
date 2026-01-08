@@ -3,7 +3,7 @@ import Skillscard from './Skillscard'
 
 const Skills = () => {
   return (
-    <div id="skills" className='pt-20 pb-20'>
+    <div  className='pt-20 pb-20'>
       <div className='w-[90%] sm:w-[80%] mx-auto'>
         <div>
           <h1 className='text-2xl text-center font-bold sm:text-3xl md:text-4xl text-white'>

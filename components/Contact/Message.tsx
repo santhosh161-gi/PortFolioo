@@ -17,8 +17,8 @@ const Message = () => {
         <div>
             <textarea placeholder='Message' className='w-full p-2 rounded-lg px-4 py-2 bg-[#363659] text-white placeholder:text-gray-400 w-[350px]' />
         </div>
-        <div>
-            <button className='w-full p-2 rounded-lg px-4 py-2 bg-[#363659] text-white placeholder:text-gray-400'>Send Message</button>
+        <div >
+            <button className='w-full p-2 rounded-lg px-4 py-2 bg-[#363659] hover:bg-[#363659]/80 text-white placeholder:text-gray-400' onClick={(e) => {e.preventDefault(); alert('Message Sent!');}}>Send Message</button>
         </div>
 
     </div>

@@ -1,9 +1,36 @@
 import React from 'react'
 import Image from 'next/image'
+import { useEffect } from 'react'
+import gsap from 'gsap'
 
 const EducationCard = ({role, college, year, cgpa, img}: {role: string, college: string, year: string, cgpa: string, img: string}) => {
+  useEffect(() => {
+
+    gsap.fromTo("#box", {
+      x:-100,
+      duration:1,
+      ease:"power2.out",
+      delay:1,
+      scrollTrigger:{
+        trigger:"#box",
+        start:"top 80%",
+        toggleActions:"play none none none",
+      }
+    },
+    {
+      x:10,
+      duration:1,
+      ease:"power2.out",
+      delay:1,
+      scrollTrigger:{
+        trigger:"#box",
+        start:"top 80%",
+        toggleActions:"play none none none",
+      }
+    });
+  }, []);
   return (
-    <div className='text-center p-6 sm:w-[500px] md:w-[500px] lg:w-[500px] flex flex-row items-center gap-10 rounded-xl bg-[#1e2939] hover:bg-white/10 transition'>
+    <div className='text-center p-6 sm:w-[500px] md:w-[500px] lg:w-[500px] flex flex-row items-center gap-10 rounded-xl bg-gradient-to-r from-[#1e2939] to-[#1e2939]/5  rounded-r-none   transition' id='box'>
         <div>
             <Image src={img} width={60} height={60} alt="Education"/>
         </div>

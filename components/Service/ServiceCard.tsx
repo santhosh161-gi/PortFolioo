@@ -31,7 +31,7 @@ const ServiceCard = () => {
     ].map((item, i) => (
       <div
         key={i}
-        className="text-center p-6 rounded-xl bg-[#1e2939] hover:bg-white/10 transition"
+        className="text-center p-6 rounded-xl bg-gradient-to-b from-[#1e2939] to-[#1e2939]/5  transition"
       >
         <div>{item.logo}</div>
         <h3 className="text-md font-semibold mb-3 mt-4">
