@@ -4,6 +4,7 @@ import { CiLocationOn, CiMail } from 'react-icons/ci'
 import { IoCallOutline } from 'react-icons/io5'
 import Message from './Message'
 import Letter from '@/animation/letter'
+import ButtonText from '@/animation/letter'
 
 
 
@@ -17,7 +18,7 @@ const Contact = () => {
 
           <div className='flex flex-col gap-2'>
             <div className='ml-10'>
-               <Letter/>
+               <ButtonText/>
                </div>
             
             <p className="mt-3 text-white font-semibold">
@@ -54,7 +55,7 @@ const Contact = () => {
         </div>
 
         {/* RIGHT SIDE (OPTIONAL – FORM / IMAGE) */}
-        <div className="hidden lg:flex items-center justify-center mt-40">
+        <div className="hidden lg:flex items-center justify-center ">
           <Message />
         </div>
 
