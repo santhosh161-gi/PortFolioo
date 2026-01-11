@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import ProjectDetails from './ProjectDetails';
+
+
 
 const ProjectCard = ({img,title,description,tech1,tech2,tech3,tech4}:any) => {
+
+  const [Details,setDetails]=useState(false);
+  const handleDetails=()=>{
+    setDetails(!Details);
+  }
   return (
    <section className="py-10">
  
@@ -10,7 +18,7 @@ const ProjectCard = ({img,title,description,tech1,tech2,tech3,tech4}:any) => {
   <div className="flex flex-wrap justify-center gap-10">
     
     {/* Project Card */}
-    <div className="text-center p-2  w-[400px] flex flex-col items-center gap-4 rounded-xl  z-100 cursor-pointer hover:scale-105 transition-all duration-500">
+    <div className="text-center p-2  w-[400px] flex flex-col items-center gap-4 rounded-xl  z-50 cursor-pointer hover:scale-105 transition-all duration-500" onClick={ handleDetails}>
       <div className=''>
         <Image
         src={img}
@@ -36,7 +44,10 @@ const ProjectCard = ({img,title,description,tech1,tech2,tech3,tech4}:any) => {
     </div>
 
   </div>
-</section>
+  {Details && <ProjectDetails isOpen={Details} onClose={handleDetails} title={title} description={description} img={img} />}
+  
+   </section>
+     
 
   )
 }

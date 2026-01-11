@@ -6,8 +6,8 @@ import ProjectCard from './ProjectCard'
 const Project = () => {
   return (
     <div id="projects" className='pt-20 pb-20'>
-      <h1 className='text-xl text-center font-bold sm:text-xl md:text-2xl lg:text-3xl text-white mx-auto max-w-3xl' >
-        A Collection Of <span className='text-cyan-500 uppercase ml-5'>My Projects</span>
+      <h1 className='text-xl text-center  font-bold uppercase sm:text-xl md:text-2xl lg:text-3xl text-slate-400 mx-auto max-w-3xl' >
+        A Collection Of <span className='text-cyan-200 uppercase ml-5'>My Projects</span>
       </h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mx-auto px-10'>
         <ProjectCard img="/uiux.png" title="UI/UX Student Dashboard" description="A modern responsive UI/UX portfolio designed using Figma and built with Next.js, typescript & Tailwind CSS." tech1="Next.js" tech2="TypeScript" tech3="Tailwind CSS" tech4="Figma"/>
