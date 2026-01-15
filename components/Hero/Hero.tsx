@@ -144,7 +144,7 @@ const Hero = () => {
 
         <h1
           ref={heroRef}
-          className="mt-10 text-md sm:text-xl md:text-2xl lg:text-3xl text-center font-bold uppercase text-gray-400"
+          className="mt-10 text-md sm:text-xl md:text-2xl lg:text-3xl text-center font-bold uppercase text-slate-300"
         >
           Crafting responsive, high-performance <br />
           <span>
