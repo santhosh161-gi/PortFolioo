@@ -18,7 +18,7 @@ const ProjectCard = ({img,title,description,tech1,tech2,tech3,tech4}:any) => {
   <div className="flex flex-wrap justify-center gap-10">
     
     {/* Project Card */}
-    <div className="text-center p-2  w-[400px] flex flex-col items-center gap-4 rounded-xl  z-50 cursor-pointer hover:scale-105 transition-all duration-500" onClick={ handleDetails}>
+    <div className="text-center p-2 bg-slate-700 w-[400px] flex flex-col items-center gap-4 rounded-xl  z-50 cursor-pointer hover:scale-105 transition-all duration-500 rounded-xl" onClick={ handleDetails}>
       <div className=''>
         <Image
         src={img}
@@ -29,16 +29,16 @@ const ProjectCard = ({img,title,description,tech1,tech2,tech3,tech4}:any) => {
       />
       </div> 
       <div className='flex flex-col items-start'>
-        <h1 className="text-sm   font-bold text-cyan-300">{title}</h1>
-        <p className="text-[12px] text-gray-300 mt-2 text-left">
+        <h1 className="text-md   font-bold text-cyan-300">{title}</h1>
+        <p className="text-[12px] text-gray-300 font-medium mt-2 text-left">
           {description}
         </p>
       </div>
       <div className='flex flex-wrap gap-2 items-start flex-row'>
-        <div className='bg-slate-600 px-2 py-1 rounded-xl text-slate-200 text-xs'>{tech1}</div>
-        <div className='bg-slate-600 px-2 py-1 rounded-xl text-slate-200 text-xs'>{tech2}</div>
-        <div className='bg-slate-600 px-2 py-1 rounded-xl text-slate-200 text-xs'>{tech3}</div>
-        <div className='bg-slate-600 px-2 py-1 rounded-xl text-slate-200 text-xs'>{tech4}</div>
+        <div className='bg-black/50 px-2 py-1 rounded-xl text-white text-xs'>{tech1}</div>
+        <div className='bg-black/50 px-2 py-1 rounded-xl text-white text-xs'>{tech2}</div>
+        <div className='bg-black/50 px-2 py-1 rounded-xl text-white text-xs'>{tech3}</div>
+        <div className='bg-black/50 px-2 py-1 rounded-xl text-white text-xs'>{tech4}</div>
         
       </div>
     </div>

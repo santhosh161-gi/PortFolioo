@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiCss3, SiDocker, SiFigma, SiFlutter, SiGit, SiGithub, SiHtml5, SiJavascript, SiJquery, SiLaravel, SiLinux, SiMongodb, SiMysql, SiReact, SiSpringboot, SiTailwindcss } from 'react-icons/si'
+import { SiCss3, SiDocker, SiFigma, SiFirebase, SiFlutter, SiGit, SiGithub, SiHtml5, SiJavascript, SiJquery, SiLaravel, SiLinux, SiMongodb, SiMysql, SiReact, SiSpringboot, SiTailwindcss } from 'react-icons/si'
 import { TbBrandNextjs, TbBrandVercel } from "react-icons/tb";
 import { DiNodejs } from "react-icons/di";
 import { LiaJava } from "react-icons/lia";
@@ -145,6 +145,12 @@ const Skillscard = () => {
             name:"GSAP",
             img:<GiJigsawBox size={50}/>,
             
+        },
+        {
+            id:21,
+            name:"FireBase",
+            img:<SiFirebase size={50}/>,
+            
         }
     
     ]
@@ -153,7 +159,7 @@ const Skillscard = () => {
         {
             skills.map((skill)=>(
                 <div key={skill.id} className='flex flex-col items-center justify-center hover:scale-110 transition-all duration-300 '>
-                    <div className='w-24 h-24 text-white flex items-center justify-center'>
+                    <div className='w-20 h-20 text-white flex items-center justify-center'>
                         {skill.img}
                     </div>
                     <div className='text-slate-400 text-center '>{skill.name}</div>

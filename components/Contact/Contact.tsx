@@ -21,7 +21,7 @@ const Contact = () => {
                <ButtonText/>
                </div>
             
-            <p className="mt-3 text-white font-semibold">
+            <p className="mt-3 text-white text-[20px] font-semibold">
               Let’s build something amazing together 🚀
             </p>
           </div>
