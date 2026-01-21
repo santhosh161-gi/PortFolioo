@@ -132,14 +132,14 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center mt-20 px-4">
+      <div className="relative z-10 flex flex-col items-center mt-20 ">
         <Image
           id="hero-image"
-          src="/santhosh.png"
+          src="/santhoshpic.png"
           alt="Santhosh"
           width={200}
           height={200}
-          className="rounded-full ring-4 ring-gray-300"
+          className="rounded-full ring-4 ring-gray-300 w-[200px] h-[200px]"
         />
 
         <h1

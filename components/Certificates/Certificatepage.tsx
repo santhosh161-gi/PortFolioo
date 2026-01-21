@@ -29,6 +29,12 @@ export function Certificatepage() {
       year: "2025",
     },
     {
+      img: "/deloittle.png",
+      title: "Deloitte – Technology / Consulting Virtual Experience",
+      description: "Learned how technology solutions are applied in consulting environments, including problem-solving, system design thinking, business analysis, and delivering client-focused digital solutions. ",
+      year: "2026",
+    },
+    {
       img: "/udemy.png",
       title: "Mastering AI on AWS – AWS Certified AI Practitioner",
       description:
