@@ -13,8 +13,9 @@ const Resume = () => {
           <h1 className="text-xl font-bold sm:text-2xl md:text-3xl text-slate-300 uppercase">
             Internships
           </h1>
-          <div className="mt-10">
-            <ResumeCard />
+          <div className="mt-10 flex flex-col gap-10 ">
+            <ResumeCard  logo="/working.png" role="Frontend Developer Intern" company="KGiSL - Coimbatore" desc=""/>
+            <ResumeCard  logo="/working.png" role="Web Developer" company="KPR - Coimbatore" desc=""/>
           </div>
           
         </div>
